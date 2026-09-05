@@ -1,0 +1,3 @@
+- [Тренажер](https://learngitbranching.js.org/?locale=ru_RU)
+- [[Git для новичков (часть 1)]] - https://habr.com/ru/articles/541258/
+- [[Git для новичков (часть 2)]] - https://habr.com/ru/articles/542616/

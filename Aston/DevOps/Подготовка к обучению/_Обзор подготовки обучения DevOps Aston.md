@@ -1,0 +1,9 @@
+- Условия 1-месячного онлайн-курса - https://vk.ru/doc323205084_704418581?hash=V7kTyqtiNzB06bX0zHrDC9im8sh5viIHioZr6DzaFGw&dl=bZW3jjFmoKkftae3N1jAIZFcELdv7jrHWlKFd2xkIhL&from_module=vkmsg_desktop
+- Программа онлайн-курса - https://docs.google.com/document/d/1YNDrCteQpKurdQV_BsjUr0_sHpwuUakTCFXz-nrj_Jc/edit?tab=t.0
+- Рекомендуемые темы для подготовки к тестированию на онлайн-курс - https://docs.google.com/document/d/1rDZ8JxlEZYGIPAzqx4khhTrXrLHzRew5ZckUPGW4CBs/edit?tab=t.0
+- FAQ - https://docs.google.com/spreadsheets/d/1gHTcNd04hEWoad_mm-rp7MDT2kih0Ae1_pEXWbuQ5iw/edit?gid=0#gid=0
+- [[JSON]]
+- [[_Обзор Git]]
+- [[Bash]]
+- [[_Обзор Python]]
+- [[_Обзор веб-сервисов]]

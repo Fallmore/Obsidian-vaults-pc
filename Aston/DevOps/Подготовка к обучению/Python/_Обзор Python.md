@@ -1,0 +1,1 @@
+- [[Декораторы]] - https://pythonworld.ru/osnovy/dekoratory.html
