@@ -3,6 +3,8 @@
 - [[Stream API]] или [Stream Doc](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html)
 - [[Optional]]
 - [[Как обрабатывать исключения в Java (Java Exception)]]
+- [[Виртуальные потоки в Java. эволюция, практика, подводные камни]]
+- [[Виртуальные потоки (Metanit)]]
 
 ## ☕ Что будем изучать в этом модуле?
 
@@ -60,33 +62,33 @@ Java строится на объектах. Junior обязан уверенн�
 
 ## ⚠️ 4. Исключения и работа с файлами
 
-|Тема|Что изучить|
-|---|---|
-|Checked vs Unchecked исключения|`Exception` vs `RuntimeException`, когда что бросать|
-|`try-catch-finally`, **try-with-resources**|Автоматическое закрытие `AutoCloseable` ресурсов|
-|Кастомные исключения, цепочки (`initCause`)|Семантическая обработка ошибок вместо `e.printStackTrace()`|
-|Java NIO.2: `Path`, `Files`, `BufferedReader`, `Files.readString`|Современное чтение/запись без boilerplate `InputStream`|
+|       | Тема                                                              | Что изучить                                                 |
+| ----- | ----------------------------------------------------------------- | ----------------------------------------------------------- |
+| ==+== | Checked vs Unchecked исключения                                   | `Exception` vs `RuntimeException`, когда что бросать        |
+| ==+== | `try-catch-finally`, **try-with-resources**                       | Автоматическое закрытие `AutoCloseable` ресурсов            |
+| ==+== | Кастомные исключения, цепочки (`initCause`)                       | Семантическая обработка ошибок вместо `e.printStackTrace()` |
+| ==+== | Java NIO.2: `Path`, `Files`, `BufferedReader`, `Files.readString` | Современное чтение/запись без boilerplate `InputStream`     |
 
 ## ⚡ 5. Многопоточность (Базовый уровень)
 
 Java 21+ изменила подход к конкурентности. Junior обязан понимать разницу.
 
-- `Thread`, `Runnable`, `Callable`, `Future`
-- **Virtual Threads (Loom, Java 21+)**: `Thread.startVirtualThread()`, `Executors.newVirtualThreadPerTaskExecutor()`
-- `synchronized`, `volatile`, `ReentrantLock`, `java.util.concurrent` пакеты
-- `CompletableFuture` (базовое понимание композиции асинхронных задач)
+- [x] `Thread`, `Runnable`, `Callable`, `Future`
+- [x] **Virtual Threads (Loom, Java 21+)**: `Thread.startVirtualThread()`, `Executors.newVirtualThreadPerTaskExecutor()`
+- [x] `synchronized`, `volatile`, `ReentrantLock`, `java.util.concurrent` пакеты
+- [x] `CompletableFuture` (базовое понимание композиции асинхронных задач)
     
     > 💡 _Практика:_ Напишите HTTP-клиент, который параллельно опрашивает 5 API-эндпоинтов через виртуальные потоки. Агрегируйте ответы и замерьте время.
     
 
 ## 🛠️ 6. Сборка, тесты и инструменты
 
-|Инструмент|Зачем|Современный стандарт 2026|
-|---|---|---|
-|**Maven / Gradle**|Управление зависимостями, сборка, жизненный цикл|Maven для старта (проще), Gradle для сложных проектов|
-|**JUnit 5**|Тестирование: `@Test`, `@BeforeEach`, `@ParameterizedTest`, assertions|`org.junit.jupiter.api.*`, `assertThrows`, `assertAll`|
-|**Mockito**|Мокирование зависимостей, `@Mock`, `@InjectMocks`, `verify`|Стандарт для unit-тестов сервисного слоя|
-|**IntelliJ IDEA**|Отладка, рефакторинг, навигация, live templates|Community/Ultimate, `Run/Debug Configurations`, Breakpoints|
+|       | Инструмент         | Зачем                                                                  | Современный стандарт 2026                                   |
+| ----- | ------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------- |
+|       | **Maven / Gradle** | Управление зависимостями, сборка, жизненный цикл                       | Maven для старта (проще), Gradle для сложных проектов       |
+|       | **JUnit 5**        | Тестирование: `@Test`, `@BeforeEach`, `@ParameterizedTest`, assertions | `org.junit.jupiter.api.*`, `assertThrows`, `assertAll`      |
+|       | **Mockito**        | Мокирование зависимостей, `@Mock`, `@InjectMocks`, `verify`            | Стандарт для unit-тестов сервисного слоя                    |
+| ==+== | **IntelliJ IDEA**  | Отладка, рефакторинг, навигация, live templates                        | Community/Ultimate, `Run/Debug Configurations`, Breakpoints |
 
 ## 🐙 7. Git и основы HTTP/REST
 
